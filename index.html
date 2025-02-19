@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amigo Secreto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 10px;
+    }
+    input, button {
+      padding: 8px;
+      margin: 5px 0;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      background: #f0f0f0;
+      margin: 5px 0;
+      padding: 5px;
+      border-radius: 4px;
+    }
+    #resultado {
+      margin-top: 20px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Amigo Secreto</h1>
+  <input type="text" id="nombre" placeholder="Ingresa un nombre">
+  <button id="agregar">Agregar</button>
+  <ul id="listaNombres"></ul>
+  <button id="sortear">Sortear Amigo Secreto</button>
+  <button id="reiniciar">Reiniciar</button>
+  <p id="resultado"></p>
+
+  <script>
+    // Array para almacenar los nombres
+    let nombres = [];
+
+    // Referencias a los elementos del DOM
+    const inputNombre = document.getElementById('nombre');
+    const listaNombres = document.getElementById('listaNombres');
+    const resultado = document.getElementById('resultado');
+
+    // Función para agregar un nombre a la lista
+    document.getElementById('agregar').addEventListener('click', () => {
+      const nombre = inputNombre.value.trim();
+      if (nombre !== '') {
+        nombres.push(nombre);
+        const li = document.createElement('li');
+        li.textContent = nombre;
+        listaNombres.appendChild(li);
+        inputNombre.value = '';
+        inputNombre.focus();
+      }
+    });
+
+    // Función para sortear un nombre al azar
+    document.getElementById('sortear').addEventListener('click', () => {
+      if (nombres.length === 0) {
+        alert('Agrega al menos un nombre para sortear.');
+        return;
+      }
+      const indice = Math.floor(Math.random() * nombres.length);
+      resultado.textContent = 'El amigo secreto es: ' + nombres[indice];
+    });
+
+    // Función para reiniciar la aplicación
+    document.getElementById('reiniciar').addEventListener('click', () => {
+      nombres = [];
+      listaNombres.innerHTML = '';
+      resultado.textContent = '';
+      inputNombre.value = '';
+      inputNombre.focus();
+    });
+  </script>
+</body>
+</html>
