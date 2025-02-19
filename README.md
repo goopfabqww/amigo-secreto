@@ -15,20 +15,17 @@ Esta es una aplicación web sencilla desarrollada en HTML, CSS y JavaScript que 
 - CSS3
 - JavaScript
 
-## Cómo Usar
 
-1. **Acceso a la aplicación:**
-   - Puedes ver la aplicación en [https://isradu.github.io/amigo-secreto/](https://isradu.github.io/amigo-secreto/).
 
-2. **Agregar participantes:**
+1. **Agregar participantes:**
    - Escribe un nombre en el campo de entrada y haz clic en el botón **Agregar**.
    - El nombre se añadirá a la lista de participantes.
 
-3. **Realizar el sorteo:**
+2. **Realizar el sorteo:**
    - Una vez agregados los nombres, haz clic en el botón **Sortear Amigo Secreto** para que se seleccione un nombre al azar.
    - El nombre sorteado se mostrará en la pantalla.
 
-4. **Reiniciar la aplicación:**
+3. **Reiniciar la aplicación:**
    - Si deseas reiniciar la lista y comenzar de nuevo, haz clic en el botón **Reiniciar**.
 
 ## Despliegue en GitHub Pages
@@ -55,10 +52,7 @@ Si deseas contribuir a este proyecto:
 - Crea una rama para tus cambios.
 - Realiza un pull request describiendo las modificaciones.
 
-## Licencia
 
-Este proyecto es de código abierto y se distribuye bajo la licencia MIT.  
-(Indica la licencia que prefieras si es diferente).
 
 ## Autor
 @Aiethelia
