@@ -46,7 +46,7 @@ Para desplegar esta aplicación en GitHub Pages:
    - Habilita GitHub Pages seleccionando la rama principal (por ejemplo, `main` o `master`) y la carpeta raíz.
 
 4. **Acceso:**
-   - La aplicación estará disponible en: `https://isradu.github.io/amigo-secreto/`.
+   - La aplicación estará disponible en: 
 
 ## Contribuciones
 
@@ -61,6 +61,4 @@ Este proyecto es de código abierto y se distribuye bajo la licencia MIT.
 (Indica la licencia que prefieras si es diferente).
 
 ## Autor
-
-[Tu Nombre o Alias]  
-[Tu correo electrónico o enlace a tu perfil de GitHub]
+@Aiethelia
